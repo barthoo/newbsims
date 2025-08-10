@@ -1,0 +1,110 @@
+/* General body and layout */
+body {
+    background: #f7f7fa;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+}
+
+/* Header (Administrator Dashboard) */
+.header {
+    background: #0e7490;
+    color: #fff;
+    padding: 18px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.3em;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.header a {
+    color: #fff;
+    text-decoration: none;
+}
+.logout a.btn, .logout-btn {
+    background: linear-gradient(90deg, #e74c3c 60%, #ff7675 100%);
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 8px 22px;
+    color: #fff !important;
+    box-shadow: 0 2px 8px rgba(231,76,60,0.08);
+    transition: background 0.2s;
+    margin-left: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+.logout a.btn:hover, .logout-btn:hover {
+    background: linear-gradient(90deg, #c0392b 60%, #ff7675 100%);
+    color: #fff !important;
+}
+
+/* Sidebar */
+.admin-sidebar {
+    min-width: 220px;
+    background: #0e7490;
+    color: #fff;
+    min-height: 100vh;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.04);
+    padding-top: 0;
+    float: left;
+}
+.sidebar-header {
+    padding: 24px 16px 18px 16px;
+    font-size: 1.3em;
+    font-weight: bold;
+    background: #155e75;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.admin-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.admin-sidebar ul li {
+    border-bottom: 1px solid #19788e;
+}
+.admin-sidebar ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 20px;
+    transition: background 0.2s;
+    font-size: 1.08em;
+}
+.admin-sidebar ul li a:hover,
+.admin-sidebar ul li.active a {
+    background: #38bdf8;
+    color: #0e7490;
+    font-weight: bold;
+}
+
+/* Main content area */
+.main-content {
+    margin-left: 220px;
+    padding: 40px 40px 30px 40px;
+    background: #fff;
+    border-radius: 16px;
+    margin-top: 40px;
+    box-shadow: 0 8px 32px rgba(60,60,100,0.12);
+    min-height: 400px;
+}
+.admin-dashboard-title {
+    font-size: 2.2em;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .admin-sidebar { min-width: 100vw; float: none; }
+    .main-content { margin: 20px 2vw 0 2vw; padding: 20px 5vw; margin-left: 0; }
+    .header { flex-direction: column; align-items: flex-start; padding: 18px 10px; }
+    .admin-dashboard-title { font-size: 1.4em; margin-top: 18px; }
+}

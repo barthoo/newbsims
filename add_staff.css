@@ -1,0 +1,145 @@
+    body {
+            background: #f7f7fa;
+        }
+        .main-flex-container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            min-height: 100vh;
+            width: 100vw;
+        }
+
+        .registration-container {
+            max-width: 800px;
+            margin: 40px auto 0 auto;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(60,60,100,0.12);
+            padding: 32px 20px 24px 20px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            width: 100%;
+        }
+        .registration-title {
+            text-align: center;
+            font-size: 2.2em;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+        }
+        .form-group label {
+            font-weight: 600;
+            color: #34495e;
+        }
+        .form-control, .form-select {
+            border-radius: 8px;
+            border: 1px solid #bfc9d1;
+            font-size: 1.1em;
+            padding: 10px 14px;
+        }
+        .form-section-title {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #007bff;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+        .profile-pic-container {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            text-align: center;
+        }
+        .profile-pic-preview {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #007bff;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .btn-primary {
+            background: linear-gradient(90deg, #007bff 60%, #00c6ff 100%);
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2em;
+            padding: 10px 0;
+            width: 100%;
+            font-weight: 600;
+            letter-spacing: 1px;
+            box-shadow: 0 2px 8px rgba(0,123,255,0.08);
+        }
+        .btn-primary:hover {
+            background: linear-gradient(90deg, #0056b3 60%, #00aaff 100%);
+        }
+        .input-icon {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #007bff;
+            font-size: 1.1em;
+        }
+        .input-group {
+            position: relative;
+        }
+        .input-group .form-control {
+            padding-left: 38px;
+        }
+        .alert-success {
+            margin-bottom: 10px;
+            font-size: 0.95em;
+            padding: 6px 12px;
+            float: right;
+            text-align: right;
+        }
+        .alert-danger {
+            margin-bottom: 20px;
+            font-size: 1.15em;
+        }
+        /* Responsive styles */
+        @media (max-width: 1000px) {
+            .main-flex-container {
+                flex-direction: column;
+                align-items: stretch;
+            }
+           
+       
+            .registration-container { padding: 4px 1vw; }
+            .profile-pic-preview { width: 90px !important; height: 90px !important; }
+            .header { font-size: 0.95em; }
+            .dashboard-title { font-size: 0.95em; }
+            .row {
+                display: flex;
+                flex-direction: column;
+            }
+            .col-md-6 {
+                width: 100% !important;
+                max-width: 100% !important;
+                margin-bottom: 10px;
+            }
+        }
+        @media (max-width: 900px) {
+            .registration-container {
+                max-width: 98vw;
+                padding: 16px 1vw;
+                margin: 20px auto 0 auto;
+            }
+            .profile-pic-container { position: static; margin-bottom: 20px; }
+            .alert-success { float: none; text-align: center; display: block; }
+        }
+        @media (max-width: 700px) {
+            .registration-container { padding: 8px 1vw; }
+        }
+        @media (max-width: 500px) {
+            .registration-container { padding: 2px 1vw; }
+            .registration-title { font-size: 1.1em; }
+        }
+        

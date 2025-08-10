@@ -1,0 +1,121 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    position: fixed;
+    background-color: blueviolet;
+    height: 70px;
+    width:100%;
+    z-index: 1;
+}
+
+.logo{
+    font-size: 25px;
+    position: relative;
+    left: 5%;
+    color: white;
+    font-weight: bold;
+    line-height: 70px;
+}
+
+ul{
+   position: relative;
+   float: right;
+   margin-right: 20PX;
+   
+} 
+
+ul li{
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 5px;
+   
+
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.homebackgroud{
+    background-image: url("https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.bsimshomepagelogo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 50%;
+    height: 90%;
+    max-width: 100%;
+    max-height: 100%;  \[]
+}
+
+.form_deg{
+  size: 50%;
+  display: flex;
+    margin-left: 42%;
+
+   
+
+
+}
+
+.label_deg{
+    
+    color: rgb(12, 12, 12)  ;
+    width: 100px;
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.login_form{
+    background-color: rgb(196, 179, 132);
+    width: 300px;
+    padding-bottom: 70px;
+    height: 150px;
+    padding-top: 20px;
+    
+    
+}
+
+.body_deg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+
+    
+
+}
+.error{
+    display: inline-block;
+    color: brown;
+}
+
+.form-img{
+    flex: 1;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    background: transparent;
+    height: 80vh;
+    padding-left:1200px;
+}
+
+.loginlogo{
+    margin-top: 30px;
+    display: inline-block;
+}
